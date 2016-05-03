@@ -1,4 +1,4 @@
-setwd('/Users/kalpanatripathi/Documents/sjsu/AWSBackup/ILI_Prediction/data')
+#setwd('/Users/kalpanatripathi/Documents/sjsu/AWSBackup/ILI_Prediction/data')
 # Reading the data set
 #ILIData <- read.table('FinalDataSet_3_3.csv',sep=',',header=TRUE)
 

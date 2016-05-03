@@ -75,5 +75,6 @@ body <- dashboardBody(
 dashboardPage(
   dashboardHeader(title = "Flu Prediction"),
   sidebar,
-  body
+  body,
+  skin = "purple"
 )

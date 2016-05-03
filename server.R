@@ -141,7 +141,7 @@ shinyServer(function(input, output) {
   })
   
   output$gPlot2 <- renderPlot({
-    setwd('/Users/kalpanatripathi/Documents/sjsu/AWSBackup/ILI_Prediction/ILI_Prediction/data/')
+    #setwd('/Users/kalpanatripathi/Documents/sjsu/AWSBackup/ILI_Prediction/ILI_Prediction/data/')
     fluData <- read.table('FinalDataSet_3_3.csv',sep=',',header=TRUE)
     train<-fluData[1:520,1:12]
     # Use columns 1-9 as training data
@@ -212,7 +212,7 @@ shinyServer(function(input, output) {
   })
   
   output$gPlot3 <- renderPlot({
-    setwd('/Users/kalpanatripathi/Documents/sjsu/AWSBackup/ILI_Prediction/ILI_Prediction/data/')
+    #setwd('/Users/kalpanatripathi/Documents/sjsu/AWSBackup/ILI_Prediction/ILI_Prediction/data/')
     fluData <- read.table('FinalDataSet_3_3.csv',sep=',',header=TRUE)
     train<-fluData[1:520,1:12]
     # Use columns 1-9 as training data
@@ -483,7 +483,7 @@ shinyServer(function(input, output) {
   })
   output$valueP1 <- renderPrint({
     
-    setwd('/Users/kalpanatripathi/Documents/sjsu/AWSBackup/ILI_Prediction/ILI_Prediction/data/')
+    #setwd('/Users/kalpanatripathi/Documents/sjsu/AWSBackup/ILI_Prediction/ILI_Prediction/data/')
     # read in the data set
     fluData <- read.table('FinalDataSet_3_3.csv',sep=',',header=TRUE)
     train<-fluData[1:520,1:10]
@@ -529,7 +529,7 @@ shinyServer(function(input, output) {
   })
   
   output$valueP2 <- renderPrint({
-    setwd('/Users/kalpanatripathi/Documents/sjsu/AWSBackup/ILI_Prediction/ILI_Prediction/data/')
+    #setwd('/Users/kalpanatripathi/Documents/sjsu/AWSBackup/ILI_Prediction/ILI_Prediction/data/')
     # read in the data set
     fluData <- read.table('FinalDataSet_3_3.csv',sep=',',header=TRUE)
     train<-fluData[1:520,1:10]
@@ -564,7 +564,7 @@ shinyServer(function(input, output) {
     
   })
   output$valueP3 <- renderPrint({
-    setwd('/Users/kalpanatripathi/Documents/sjsu/AWSBackup/ILI_Prediction/ILI_Prediction/data/')
+    #setwd('/Users/kalpanatripathi/Documents/sjsu/AWSBackup/ILI_Prediction/ILI_Prediction/data/')
     # read in the data set
     fluData <- read.table('FinalDataSet_3_3.csv',sep=',',header=TRUE)
     train<-fluData[1:520,1:10]
@@ -594,7 +594,7 @@ shinyServer(function(input, output) {
   
   output$valueP4 <- renderPrint({
     
-    setwd('/Users/kalpanatripathi/Documents/sjsu/AWSBackup/ILI_Prediction/ILI_Prediction/data/')
+    #setwd('/Users/kalpanatripathi/Documents/sjsu/AWSBackup/ILI_Prediction/ILI_Prediction/data/')
     fluData <- read.table('FinalDataSet_3_3.csv',sep=',',header=TRUE)
     train<-fluData[1:520,1:12]
     # Use columns 1-9 as training data
@@ -644,7 +644,7 @@ shinyServer(function(input, output) {
   })
   
   output$valueP5 <- renderPrint({
-    setwd('/Users/kalpanatripathi/Documents/sjsu/AWSBackup/ILI_Prediction/ILI_Prediction/data/')
+    #setwd('/Users/kalpanatripathi/Documents/sjsu/AWSBackup/ILI_Prediction/ILI_Prediction/data/')
     fluData <- read.table('FinalDataSet_3_3.csv',sep=',',header=TRUE)
     train<-fluData[1:520,1:12]
     # Use columns 1-9 as training data
@@ -713,7 +713,7 @@ shinyServer(function(input, output) {
     
   })
   output$valueP6 <- renderPrint({
-    setwd('/Users/kalpanatripathi/Documents/sjsu/AWSBackup/ILI_Prediction/ILI_Prediction/data/')
+    #setwd('/Users/kalpanatripathi/Documents/sjsu/AWSBackup/ILI_Prediction/ILI_Prediction/data/')
     fluData <- read.table('FinalDataSet_3_3.csv',sep=',',header=TRUE)
     train<-fluData[1:520,1:12]
     # Use columns 1-9 as training data

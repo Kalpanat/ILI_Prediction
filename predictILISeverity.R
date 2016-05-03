@@ -1,5 +1,5 @@
 #Team Datadrillers
-setwd('/Users/kalpanatripathi/Documents/sjsu/AWSBackup/ILI_Prediction/data')
+#setwd('/Users/kalpanatripathi/Documents/sjsu/AWSBackup/ILI_Prediction/data')
 set.seed(pi)
 rm(list=ls())
 require(klaR)
