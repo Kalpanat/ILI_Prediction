@@ -117,7 +117,7 @@ shinyServer(function(input, output) {
     row.names(dat2) <- unique(nms)
     
     USAsp <- SpatialPolygonsDataFrame(USApolygons,  data = dat2)
-    spplot(USAsp['value'])
+    spplot(USAsp['value'],xlab='Regions',ylab='ILI Severity')
     
   })
   ##2nd file
