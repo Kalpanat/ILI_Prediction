@@ -1,4 +1,4 @@
-setwd('/Users/kalpanatripathi/Documents/sjsu/AWSBackup/ILI_Prediction/data')
+setwd('/Users/kalpanatripathi/Documents/sjsu/AWSBackup/ILI_Prediction/ILI_Prediction/data')
 
 # MYSQL database
 library(RMySQL)
