@@ -1,23 +1,17 @@
+## ui.R ##
+
 library("shinydashboard")
 sidebar <- dashboardSidebar(
   sidebarMenu(
+    
     menuItem("Flu Positivity", icon = icon("th"), tabName = "FluP",
              badgeLabel = "new", badgeColor = "green"),
-    menuSubItem("SVM" , tabName = "svm1"),
-    menuSubItem("Decision Tree",tabName = "Decision1"),
-    menuSubItem("Linear Regression",tabName = "Regr1"),
     
     menuItem("Flu Severity", icon = icon("th"), tabName = "FluS",
              badgeLabel = "new", badgeColor = "green"),
-    menuSubItem("SVM" , tabName = "svm2"),
-    menuSubItem("Decision Tree",tabName = "Decision2"),
-    menuSubItem("Linear Regression",tabName = "Regr2"),
     
     menuItem("ILI Severity", icon = icon("th"), tabName = "IliS",
              badgeLabel = "new", badgeColor = "green"),
-    menuSubItem("SVM" , tabName = "svm3"),
-    menuSubItem("Decision Tree",tabName = "Decision3"),
-    menuSubItem("Linear Regression",tabName = "Regr3"),
     menuItem("HeatMap", tabName = "hm", icon = icon("hm"))
   )
   
@@ -33,7 +27,14 @@ body <- dashboardBody(
     tabItem(tabName = "FluP",
             h2("Flu Positivity"),
             plotOutput("graphPlot"),
-            plotOutput("lmPlot")
+            plotOutput("lmPlot"),
+            textOutput("valueP1"),
+            textOutput("valueP2"),
+            textOutput("valueP3")
+            
+            
+            
+            
     ),
     
     tabItem(tabName = "FluS",
@@ -41,118 +42,32 @@ body <- dashboardBody(
             plotOutput("gPlot2"),
             
             plotOutput("gPlot3"),
-            plotOutput("gPlot4")
+            plotOutput("gPlot4"),
+            textOutput("valueP5"),
+            textOutput("valueP4"),
+            textOutput("valueP6")
+            
             
     ),
     
     tabItem(tabName = "IliS",
             h2("ILI Severity"),
-            plotOutput("gPlot10"),
+            # plotOutput("gPlot10"),
             plotOutput("gPlot11"),
             plotOutput("gPlot12"),
-            plotOutput("gPlot13")
+            plotOutput("gPlot13"),
+            textOutput("valueP7"),
+            textOutput("valueP8"),
+            textOutput("valueP9")
+            
+            
             
     ),
     tabItem(tabName = "hm",
-            h2("flu1"),
+            h2("Heat Map across Regions of United States"),
             plotOutput("histPlot")
-    ),
-    tabItem(tabName = "svm1",
-            box(title = "SVM", 
-                width = 10,
-                height = "200px",
-                status = "success", 
-                solidHeader = TRUE, 
-                collapsible = TRUE,
-                textOutput("valueP1")
-            )
-    ),
-    
-    tabItem(tabName = "Decision1",
-            box(title = "Decision Tree", 
-                width = 10,
-                height = "200px",
-                status = "success", 
-                solidHeader = TRUE, 
-                collapsible = TRUE,
-                textOutput("valueP2")
-            )
-    ),
-    tabItem(tabName = "Regr1",
-            box(title = "Linear Regression",
-                width = 10,
-                height = "200px",
-                status = "success", 
-                solidHeader = TRUE, 
-                collapsible = TRUE,
-                textOutput("valueP3")
-            )
-            
-    ),
-    tabItem(tabName = "svm2",
-            box(title = "SVM", 
-                width = 10,
-                height = "200px",
-                status = "success", 
-                solidHeader = TRUE, 
-                collapsible = TRUE,
-                textOutput("valueP5")
-            )
-    ),
-    tabItem(tabName = "Decision2",
-            box(title = "Decision Tree", 
-                width = 10,
-                height = "200px",
-                status = "success", 
-                solidHeader = TRUE, 
-                collapsible = TRUE,
-                textOutput("valueP4")
-            )
-    ),
-    
-    tabItem(tabName = "Regr2",
-            box(title = "Linear Regression",
-                width = 10,
-                height = "200px",
-                status = "success", 
-                solidHeader = TRUE, 
-                collapsible = TRUE,
-                textOutput("valueP6")
-            )
-            
-    ),
-    tabItem(tabName = "svm3",
-            box(title = "SVM", 
-                width = 10,
-                height = "200px",
-                status = "success", 
-                solidHeader = TRUE, 
-                collapsible = TRUE,
-                textOutput("valueP7")
-            )
-    ),
-    tabItem(tabName = "Decision3",
-            box(title = "Decision Tree", 
-                width = 10,
-                height = "200px",
-                status = "success", 
-                solidHeader = TRUE, 
-                collapsible = TRUE,
-                textOutput("valueP8")
-            )
-    ),
-    
-    tabItem(tabName = "Regr3",
-            box(title = "Linear Regression",
-                width = 10,
-                height = "200px",
-                status = "success", 
-                solidHeader = TRUE, 
-                collapsible = TRUE,
-                textOutput("valueP9")
-            )
-            
     )
+    
   )
 )
 
